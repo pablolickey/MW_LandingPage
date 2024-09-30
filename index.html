@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youMustWatch</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css.map">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Marca/Isotipo.svg">
+
+</head>
+
+<body>
+    <header class="py-3 border-bottom border-danger border-4 bg-black">
+        <div class="container-fluid">
+            <div class="d-flex container-fluid align-items-center justify-content-between">
+                <a href="/" class="link-body-emphasis text-decoration-none">
+                    <img src="assets/img/Marca/Imagotipo.svg" alt="youMustWatch" height="60">
+                </a>
+                <div class="d-flex align-items-center justify-content-between">
+                    <h4 class="mobile-hide">
+                        <a href="/register" class="text-decoration-none color-crema-claro">Registrate / </a>
+                        <a href="/login" class="text-decoration-none color-crema-claro">Iniciá sesión</a>
+                    </h4>
+
+                    <div class="dropdown mobile-show">
+                        <a href="javascript:void(0)" class="link-body-emphasis text-decoration-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="30,33">
+                            <h3 class="m-0"><i class="bi bi-person-fill text-white bg-danger rounded p-2"></i></h3>
+                        </a>
+                        <ul class="dropdown-menu border-0 bg-black px-4 text-center rounded-0 border-danger border-bottom border-4">
+                            <li [routerLink]="'/login'"><a class="dropdown-item bg-black text-danger fw-bold" href="javascript:void(0)">Ingresar</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="p-5 bg-secondary text-center">
+        <h2 class="mt-5 display-4">¡Organizá tu contenido multimedia en un solo lugar!</h2>
+        <h3 class="text-danger mt-5 display-6 mb-3">¡Unite a youMustWatch!</h3>
+        <div class="row gutter-x-3 justify-content-center mt-5 mb-5">
+            <div class="col-lg-3">
+                <button class="btn btn-primary w-100" [routerLink]="'/register'">Registrate</button>
+            </div>
+            <h5 class="mt-4">
+                <a href="#ymw" class="text-black">Conocé más</a>
+            </h5>
+        </div>
+        <div class="d-block my-5 pt-5">
+            <img class="w-100 mobile-hide" src="assets/img/landing.png" alt="capturas">
+            <img class="w-100 mobile-show" src="assets/img/landing_mobile.png" alt="capturas">
+        </div>
+    </div>
+    <div class="bg-beige pt-5 pb-5">
+        <div class="container">
+            <div class="row gutter-x-3" id="ymw">
+                <div class="mt-5 col-12">
+                    <h2 class="text-center">YouMustWatch, la plataforma definitiva para descubrir libros, peliculas, comics y series gracias a su extenso catálogo de contenido multimedia.</h2>
+                </div>
+                <div class="col-12 mt-5 pt-5">
+                    <div class="row gutter-x-3">
+                        <div class="mt-5 col-lg-6 text-justify" id="m&w">
+                            <h3 class="display-6 mb-3">Mix & Watch</h3>
+                            <h4>Con la función de Mix & Watch obtené recomendaciones personalizadas para vos y tu grupo de amigos.</h4>
+                            <div class="row gutter-x-3 justify-content-start">
+                                <div class="col-lg-6 mb-5">
+                                    <button class="btn btn-primary w-100" [routerLink]="'/register'">¡Empezá a Mixear!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="w-100" src="assets/img/myw.gif" alt="m&m">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 mt-5 pt-5 mobile-hide mb-5 pb-5">
+                    <div class="row gutter-x-3">
+                        <div class="mt-5 col-lg-6">
+                            <img class="w-100" src="assets/img/favs.png" alt="favs">
+                        </div>
+                        <div class="mt-5 col-lg-6 pt-5 text-justify" id="listas">
+                            <h3 class="display-6 mb-3">Listas personalizadas</h3>
+                            <h4 class="mb-3">Con tus listas personalizadas vas a poder guardar de forma fácil y práctica, tu contenido favorito y tus mixes con amigos.</h4>
+                            <div class="row gutter-x-3 justify-content-start">
+                                <div class="col-lg-6">
+                                    <button class="btn btn-primary w-100" [routerLink]="'/register'">¡Agregá tu contenido ahora!</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mobile-show">
+                    <div class="row gutter-x-3">
+                        <div class="mt-5 col-lg-6 pt-5 text-justify" id="listas">
+                            <h3 class="display-6 mb-3">Listas personalizadas</h3>
+                            <h4 class="mb-3">Con tus listas personalizadas vas a poder guardar de forma fácil y práctica, tu contenido favorito y tus mixes con amigos.</h4>
+                            <div class="row gutter-x-3 justify-content-start">
+                                <div class="col-lg-6">
+                                    <button class="btn btn-primary w-100" [routerLink]="'/register'">¡Agregá tu contenido ahora!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 col-lg-6">
+                            <img class="w-100" src="assets/img/favs.png" alt="favs">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="row gutter-x-3">
+                        <div class="mt-5 pt-5 text-justify col-lg-6" id="foros">
+                            <h3 class="display-6 mb-3">Foros de discusión</h3>
+                            <h4 class="mb-3">Sumate a la conversación más épica del cine, las series, los cómics y los libros. ¡Escribí, leé y participá en YouMustWatch!</h4>
+                            <div class="row gutter-x-3 justify-content-start">
+                                <div class="col-lg-6">
+                                    <button class="btn btn-primary w-100" [routerLink]="'/register'">¡Dejá tu huella!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 col-lg-6">
+                            <img class="w-100" src="assets/img/foro.png" alt="foro">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <footer class="py-4 bg-black">
+        <div class="container">
+            <div class="row justify-content-between border-bottom border-danger border-4 my-4 pb-5">
+                <div class="col-lg-5">
+                    <h5 class="color-crema-claro mb-3 fw-black">Navegación</h5>
+                    <ul class="list-unstyled p-0 fw-bold">
+                        <li><a href="#m&w" class="text-decoration-none color-crema-oscuro">Mix & Watch</a></li>
+                        <li><a href="#listas" class="text-decoration-none color-crema-oscuro">Listas</a></li>
+                        <li><a href="#foros" class="text-decoration-none color-crema-oscuro">Foros</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <h5 class="color-crema-claro mb-3 fw-black">Contacto</h5>
+                    <ul class="list-unstyled p-0 fw-bold">
+                        <li>
+                            <a href="#" class="text-decoration-none color-crema-oscuro">
+                                <i class="bi bi-youtube color-crema-claro"></i> Youtube
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none color-crema-oscuro">
+                                <i class="bi bi-facebook color-crema-claro"></i> Facebook
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none color-crema-oscuro">
+                                <i class="bi bi-instagram color-crema-claro"></i> Instagram
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h5 class="color-crema-claro mb-3 fw-black">Cuenta</h5>
+                    <ul class="list-unstyled p-0 fw-bold">
+                        <li><a href="/register" class="text-decoration-none color-crema-oscuro">Registro</a></li>
+                        <li><a href="/login" class="text-decoration-none color-crema-oscuro">Iniciar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center px-5">
+            <img src="assets/img/Marca/Logotipo.svg" alt="Logotipo" class="img-fluid" style="height: 2rem;">
+            <img src="assets/img/Marca/Isotipo.svg" alt="Isotipo" class="img-fluid" style="height: 3.5rem;">
+        </div>
+    </footer>
+
+</body>
+
+</html>

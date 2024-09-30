@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+:root {
+    --bs-secondary: FBEA83;
+    --bs-secondary-rgb: 251, 234, 131;
+    --bs-primary: D92332;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #D92332;
+    --bs-btn-border-color: #D92332;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #761516;
+    --bs-btn-hover-border-color: #761516;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #761516;
+    --bs-btn-active-border-color: #761516;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #D92332;
+    --bs-btn-disabled-border-color: #D92332;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    .mobile-hide {
+        display: initial;
+    }
+    .mobile-show {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .mobile-hide {
+        display: none;
+    }
+    .mobile-show {
+        display: initial;
+    }
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.btn-bd-primary {
+    --bd-violet-bg: #712cf9;
+    --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--bd-violet-bg);
+    --bs-btn-border-color: var(--bd-violet-bg);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: #6528e0;
+    --bs-btn-hover-border-color: #6528e0;
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #5a23c8;
+    --bs-btn-active-border-color: #5a23c8;
+}
+
+.w-80 {
+    width: 80%!important;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-beige {
+    background-color: #FFF8BC;
+}
+
+li a:hover,
+li a:hover i {
+    color: var(--bs-danger);
+}
+
+input::placeholder {
+    color: var(--bs-danger);
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.gutter-x-3 {
+    --bs-gutter-x: 3em !important;
+}
+
+:root {
+    --color-primario: #D92332;
+    --color-negro: #090909;
+    --color-blanco: #fafafa;
+    --color-gris: #131313;
+    --color-crema-claro: #FFF8BC;
+    --color-crema-oscuro: #FCD2A8;
+    --color-peliculas: #1D209F;
+    --color-series: #5E1D9F;
+    --color-libros: #039B43;
+    --color-comics: #ED951B;
+}
+
+* {
+    font-family: Raleway;
+    letter-spacing: 0.075rem;
+    box-sizing: border-box;
+}
+
+.w-66 {
+    max-width: 66%;
+}
+
+h4 {
+    font-size: 1.33rem;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.color-negro {
+    color: var(--color-negro)
+}
+
+.color-blanco {
+    color: var(--color-blanco)
+}
+
+.color-gris {
+    color: var(--color-gris)
+}
+
+.color-peliculas {
+    color: var(--color-peliculas);
+}
+
+.color-series {
+    color: var(--color-series);
+}
+
+.color-libros {
+    color: var(--color-libros);
+}
+
+.color-comics {
+    color: var(--color-comics);
+}
+
+.color-crema-claro {
+    color: var(--color-crema-claro);
+}
+
+.color-crema-oscuro {
+    color: var(--color-crema-oscuro);
+}
+
+.fw-black {
+    font-weight: 900;
+}
